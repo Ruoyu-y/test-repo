@@ -26,7 +26,6 @@ const (
 )
 
 func main() {
-    log.Println("test")
 	if _, err := os.Stat(sockAddr); !os.IsNotExist(err) {
 		if err := os.RemoveAll(sockAddr); err != nil {
 			log.Fatal(err)
